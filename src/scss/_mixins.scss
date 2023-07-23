@@ -1,0 +1,12 @@
+@mixin flex($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin rubik(){
+  font-family: $font-family-Rubik;
+  font-style: normal;
+  line-height: normal;
+}
