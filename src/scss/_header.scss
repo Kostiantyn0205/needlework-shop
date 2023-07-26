@@ -7,11 +7,11 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1440px) {
+  @media (max-width: $xlarge-screen) {
     max-width: 950px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     max-width: 740px;
   }
 }
@@ -26,19 +26,16 @@
   box-sizing: border-box;
   padding: 0 45px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     padding: 0 25px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     padding: 10px 15px 0;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     padding: 10px 10px 0;
-  }
-
-  @media (max-width: 425px) {
     z-index: 7;
   }
 }
@@ -71,7 +68,7 @@
   }
 
   .login-button {
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       display: flex;
       height: 39px;
       align-items: center;
@@ -79,17 +76,17 @@
   }
 
   .signup-button {
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       display: none;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     height: 80px;
     align-items: flex-start;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     height: 50px;
   }
 }
@@ -104,11 +101,11 @@
   border-radius: 1px;
   background-color: $white;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     right: 185px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     display: none;
   }
 }
@@ -123,16 +120,16 @@
 
   .title-logo {
     color: var(--primary, $white);
-    font-family: 'Caveat', cursive;
+    font-family: $font-family-Caveat;
     font-size: 30px;
     font-weight: 400;
     line-height: 20px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $large-screen) {
       font-size: 24px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: $small-screen) {
       span {
         display: block;
       }
@@ -144,16 +141,16 @@
   position: absolute;
   right: 210px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     right: 200px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     right: calc(50% - 125px);
     top: 40px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     display: block;
     position: absolute;
     top: 63px;
@@ -169,19 +166,19 @@
   border-radius: 10px;
   border: 3px solid transparent;
 
-  @media (max-width: 1440px) {
+  @media (max-width: $xlarge-screen) {
     width: 300px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     width: 250px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     height: 25px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     width: 160px;
     height: 25px;
     border: 3px solid $green-apple;
@@ -197,11 +194,11 @@
   border-radius: 10px;
   outline: none;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     width: 200px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     width: 120px;
   }
 }
@@ -216,7 +213,7 @@
   background-color: $green-apple;
   border-radius: 7px;
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     padding: 4px;
     height: 25px;
   }
@@ -249,11 +246,11 @@
     font-size: 14px;
     font-weight: 400;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $large-screen) {
       padding: 5px 10px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       padding: 5px 5px;
     }
   }
@@ -264,16 +261,16 @@
     align-items: center;
     height: 67px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       height: 50px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: $small-screen) {
       justify-content: flex-end;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     padding: 0 25px;
   }
 
@@ -281,7 +278,7 @@
     padding: 0 5px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     height: 75px;
   }
 }
@@ -297,16 +294,16 @@
     height: 67px;
     @include flex(row, center, center);
 
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       height: 50px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: $small-screen) {
       height: 30px;
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     position: absolute;
     z-index: 5;
     bottom: 0;
@@ -343,7 +340,7 @@
     background-color: $green-apple;
     z-index: 5;
 
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       display: none;
     }
   }
@@ -369,15 +366,15 @@
     }
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: $xlarge-screen) {
     min-width: 230px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     min-width: 190px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     min-width: 25px;
     height: 40px;
     border: 3px solid $color-green-grass;
@@ -398,7 +395,7 @@
   border-bottom: 0;
   border-radius: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     border: 3px solid $color-green-grass;
     border-left: 0;
     border-radius: 0 10px 10px 0;
@@ -410,19 +407,19 @@
 .cart-section {
   margin-left: 150px;
 
-  @media (max-width: 1440px) {
+  @media (max-width: $xlarge-screen) {
     margin-left: 100px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     margin-left: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     margin-left: 5px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: $small-screen) {
     margin-left: 0;
   }
 }
@@ -452,7 +449,7 @@
   box-sizing: border-box;
   transition: padding-bottom 0.5s ease;
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     margin: 0;
     padding-left: 9px;
     padding-right: 5px;
@@ -470,7 +467,7 @@
 .change .bar1 {
   transform: rotate(-45deg) translate(-4px, 3px);
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     transform: rotate(-45deg) translate(-6px, 6px);
   }
 }
@@ -482,7 +479,7 @@
 .change .bar3 {
   transform: rotate(45deg) translate(-2px, -2px);
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     transform: rotate(45deg) translate(-3px, -4px);
   }
 }
@@ -540,19 +537,27 @@
   border-radius: 0 0 5px 5px;
   border-top: 0;
   box-sizing: border-box;
-  overflow-y: auto;
 
-  @media (max-width: 1440px) {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0.1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  @media (max-width: $xlarge-screen) {
     width: 230px;
     max-height: 350px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     width: 190px;
     max-height: 270px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     top: 0;
     left: -200px;
     opacity: 1;
@@ -612,7 +617,7 @@
   top: 0;
   opacity: 1;
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     top: 0;
     left: 0;
   }
@@ -628,17 +633,17 @@
   transform: translateX(0%);
   transition: transform 0.3s ease;
 
-  @media (max-width: 1440px) {
+  @media (max-width: $xlarge-screen) {
     width: 700px;
     height: 340px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     width: 530px;
     height: 260px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     width: 400px;
     height: 195px;
   }
@@ -647,11 +652,11 @@
 .slideshow.open {
   transform: translateX(120px);
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     transform: translateX(100px);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     transform: translateX(0);
   }
 }
@@ -666,7 +671,7 @@
 
 .slideshow-item:nth-child(1),
 .slideshow-item:nth-child(1) img {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 .slideshow-item:nth-child(2),
@@ -701,16 +706,16 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: $translucent-black;
   color: $white;
   padding: 20px 30px;
-  font-family: Verdana, sans-serif;
+  font-family: $font-family-Verdana;
 
-  @media (max-width: 1440px) {
+  @media (max-width: $xlarge-screen) {
     max-width: 80%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     max-width: 100%;
     height: 80%;
     bottom: 0;
@@ -725,7 +730,7 @@
   margin: 0 0 10px 0;
   color: $green-apple;
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     font-size: 18px;
   }
 }
@@ -734,7 +739,7 @@
   font-size: 15px;
   margin-bottom: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     font-size: 13px;
   }
 }
@@ -762,12 +767,12 @@
   width: 100%;
   margin: 60px auto 0;
 
-  @media (max-width: 1024px) {
+  @media (max-width: $large-screen) {
     margin-top: 20px;
     max-width: 750px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     margin-top: 10px;
     max-width: 750px;
   }
@@ -780,19 +785,19 @@
     display: flex;
     gap: 15px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $large-screen) {
       gap: 5px;
     }
   }
 
   svg {
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       width: 40px;
       height: 40px;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $medium-screen) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -823,40 +828,37 @@
     font-size: 20px;
     font-weight: 500;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $large-screen) {
       font-size: 16px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       font-size: 12px;
     }
   }
 
   p {
-    color: var(--black-2nd, rgba(81, 81, 81, 0.71));
+    color: var(--black-2nd, $gray-slight-saturation);
     @include rubik;
     font-size: 14px;
     font-weight: 400;
   }
 
   .big-screens {
-    @media (max-width: 1024px) {
+    @media (max-width: $large-screen) {
       display: none;
     }
   }
 
   .small-screens {
-    color: var(--black-2nd, rgba(81, 81, 81, 0.71));
-    @include rubik;
     font-size: 12px;
-    font-weight: 400;
     display: none;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $large-screen) {
       display: block;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $medium-screen) {
       font-size: 10px;
     }
   }
